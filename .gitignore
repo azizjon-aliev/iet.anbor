@@ -3,3 +3,4 @@ venv
 media
 static
 db.sqlite3
+__pychache__
