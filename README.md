@@ -3,3 +3,5 @@
 2. pip install -r requirements.txt
 3. python manage.py migrate 
 4. python manage.py runserver
+
+python manage.py dumpdata --indent 4  > data.json 
