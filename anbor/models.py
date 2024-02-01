@@ -28,3 +28,20 @@ class Product(models.Model):
 
     def __str__(self):
         return self.title
+    
+    
+class Counterparty(models.Model):
+    class Meta:
+        verbose_name = 'Контрагент'
+        verbose_name_plural = 'Контрегенты'
+        
+    
+    name = models.CharField(verbose_name='Наиминование', max_length=200, unique=True)
+    full_name = models.CharField(verbose_name='Полное наиминование', max_length=200, unique=True)
+    phone_number = models.CharField(verbose_name='Номер телефона', max_length=200, unique=True)
+    inn = models.CharField(verbose_name='ИНН', max_length=200, unique=True)
+    created_at = models.DateTimeField(verbose_name='Время создание', auto_now_add=True)
+    updated_at = models.DateTimeField(verbose_name='Время обновление', auto_now=True)
+ 
+    def __str__(self) -> str:
+        return self.full_name

@@ -1,7 +1,7 @@
 from dataclasses import fields
 from distutils.ccompiler import show_compilers
 from django.contrib import admin
-from .models import Category, Product
+from .models import Category, Product, Counterparty
 from django.utils.html import format_html
 
 
@@ -44,3 +44,23 @@ class ProductAdmin(BaseModelAdmin):
         return format_html(f"<img src='{url}' width={70} height={70} />")
 
     show_image.short_description = 'изоброжение'
+    
+
+@admin.register(Counterparty)
+class CounterpartyAdmin(BaseModelAdmin):
+    search_fields = (
+        'name', 
+        'full_name', 
+        'phone_number', 
+        'inn',
+    )
+    list_display = (
+        'name', 
+        'full_name', 
+        'phone_number', 
+        'inn',
+        'created_at',
+    )
+    readonly_fields = (
+        'created_at', 'updated_at', 
+    )
