@@ -1,328 +1,193 @@
 [
-{
-    "model": "auth.permission",
-    "pk": 1,
-    "fields": {
-        "name": "Can add log entry",
-        "content_type": 1,
-        "codename": "add_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 2,
-    "fields": {
-        "name": "Can change log entry",
-        "content_type": 1,
-        "codename": "change_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 3,
-    "fields": {
-        "name": "Can delete log entry",
-        "content_type": 1,
-        "codename": "delete_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 4,
-    "fields": {
-        "name": "Can view log entry",
-        "content_type": 1,
-        "codename": "view_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 5,
-    "fields": {
-        "name": "Can add permission",
-        "content_type": 2,
-        "codename": "add_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 6,
-    "fields": {
-        "name": "Can change permission",
-        "content_type": 2,
-        "codename": "change_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 7,
-    "fields": {
-        "name": "Can delete permission",
-        "content_type": 2,
-        "codename": "delete_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 8,
-    "fields": {
-        "name": "Can view permission",
-        "content_type": 2,
-        "codename": "view_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 9,
-    "fields": {
-        "name": "Can add group",
-        "content_type": 3,
-        "codename": "add_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 10,
-    "fields": {
-        "name": "Can change group",
-        "content_type": 3,
-        "codename": "change_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 11,
-    "fields": {
-        "name": "Can delete group",
-        "content_type": 3,
-        "codename": "delete_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 12,
-    "fields": {
-        "name": "Can view group",
-        "content_type": 3,
-        "codename": "view_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 13,
-    "fields": {
-        "name": "Can add user",
-        "content_type": 4,
-        "codename": "add_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 14,
-    "fields": {
-        "name": "Can change user",
-        "content_type": 4,
-        "codename": "change_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 15,
-    "fields": {
-        "name": "Can delete user",
-        "content_type": 4,
-        "codename": "delete_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 16,
-    "fields": {
-        "name": "Can view user",
-        "content_type": 4,
-        "codename": "view_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 17,
-    "fields": {
-        "name": "Can add content type",
-        "content_type": 5,
-        "codename": "add_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 18,
-    "fields": {
-        "name": "Can change content type",
-        "content_type": 5,
-        "codename": "change_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 19,
-    "fields": {
-        "name": "Can delete content type",
-        "content_type": 5,
-        "codename": "delete_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 20,
-    "fields": {
-        "name": "Can view content type",
-        "content_type": 5,
-        "codename": "view_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 21,
-    "fields": {
-        "name": "Can add session",
-        "content_type": 6,
-        "codename": "add_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 22,
-    "fields": {
-        "name": "Can change session",
-        "content_type": 6,
-        "codename": "change_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 23,
-    "fields": {
-        "name": "Can delete session",
-        "content_type": 6,
-        "codename": "delete_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 24,
-    "fields": {
-        "name": "Can view session",
-        "content_type": 6,
-        "codename": "view_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 25,
-    "fields": {
-        "name": "Can add Категория",
-        "content_type": 7,
-        "codename": "add_category"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 26,
-    "fields": {
-        "name": "Can change Категория",
-        "content_type": 7,
-        "codename": "change_category"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 27,
-    "fields": {
-        "name": "Can delete Категория",
-        "content_type": 7,
-        "codename": "delete_category"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 28,
-    "fields": {
-        "name": "Can view Категория",
-        "content_type": 7,
-        "codename": "view_category"
-    }
-},
-{
-    "model": "auth.user",
-    "pk": 1,
-    "fields": {
-        "password": "pbkdf2_sha256$720000$1nU9pCq8Cvm02A9HryM7Ai$L+yMKZxzIPihlzuSY1BWUZEijIMpaGtLGUwclOmjHZI=",
-        "last_login": null,
-        "is_superuser": true,
-        "username": "admin",
-        "first_name": "",
-        "last_name": "",
-        "email": "",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2024-01-31T06:38:39.074Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 1,
-    "fields": {
-        "app_label": "admin",
-        "model": "logentry"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 2,
-    "fields": {
-        "app_label": "auth",
-        "model": "permission"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 3,
-    "fields": {
-        "app_label": "auth",
-        "model": "group"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 4,
-    "fields": {
-        "app_label": "auth",
-        "model": "user"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 5,
-    "fields": {
-        "app_label": "contenttypes",
-        "model": "contenttype"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 6,
-    "fields": {
-        "app_label": "sessions",
-        "model": "session"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 7,
-    "fields": {
-        "app_label": "anbor",
-        "model": "category"
-    }
-}
-]
+    {"model": "anbor.category", "pk": 1, "fields": {"name": "Электроника", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 2, "fields": {"name": "Одежда", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 3, "fields": {"name": "Продукты питания", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 4, "fields": {"name": "Стройматериалы", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 5, "fields": {"name": "Мебель", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 6, "fields": {"name": "Спорт и отдых", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 7, "fields": {"name": "Красота и здоровье", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 8, "fields": {"name": "Детские товары", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 9, "fields": {"name": "Техника и оборудование", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+    {"model": "anbor.category", "pk": 10, "fields": {"name": "Хозяйственные товары", "created_at": "2024-02-01T12:00:00Z", "updated_at": "2024-02-01T12:00:00Z"}},
+      {
+        "model": "anbor.product",
+        "pk": 1,
+        "fields": {
+          "image": null,
+          "title": "Смартфон XYZ",
+          "description": "Современный смартфон с передовыми технологиями и высоким разрешением камеры. Подходит для работы и развлечений.",
+          "category": 1,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 2,
+        "fields": {
+          "image": null,
+          "title": "Куртка Denim",
+          "description": "Трендовая джинсовая куртка в стиле Denim. Идеально подходит для повседневной носки в холодные дни.",
+          "category": 2,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 3,
+        "fields": {
+          "image": null,
+          "title": "Паста Barilla",
+          "description": "Итальянская паста высшего качества от известного производителя Barilla. Идеальный выбор для приготовления вкусных блюд.",
+          "category": 3,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 4,
+        "fields": {
+          "image": null,
+          "title": "Строительный уровень",
+          "description": "Прочный и точный строительный уровень для профессиональных и любительских строительных работ.",
+          "category": 1,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 5,
+        "fields": {
+          "image": null,
+          "title": "Диван Comfort",
+          "description": "Удобный и стильный диван Comfort для вашей гостиной. Создайте уют в своем доме.",
+          "category": 2,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 6,
+        "fields": {
+          "image": null,
+          "title": "Велосипед Mountain",
+          "description": "Горный велосипед с прочной рамой и амортизацией. Идеально подходит для активного отдыха на природе.",
+          "category": 3,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 7,
+        "fields": {
+          "image": null,
+          "title": "Парфюм Chanel",
+          "description": "Элегантный парфюм от знаменитого бренда Chanel. Неповторимый аромат для особенных моментов.",
+          "category": 1,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 8,
+        "fields": {
+          "image": null,
+          "title": "Детская книга Adventures",
+          "description": "Увлекательные приключения в детской книге Adventures. Подарите детям волшебный мир чтения.",
+          "category": 2,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 9,
+        "fields": {
+          "image": null,
+          "title": "Электрическая дрель Bosch",
+          "description": "Мощная и надежная электрическая дрель от ведущего производителя Bosch. Идеальный инструмент для ремонтных работ.",
+          "category": 3,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+      {
+        "model": "anbor.product",
+        "pk": 10,
+        "fields": {
+          "image": null,
+          "title": "Пластиковые ящики для хранения",
+          "description": "Удобные пластиковые ящики для хранения ваших вещей. Организуйте пространство в доме.",
+          "category": 1,
+          "created_at": "2024-02-01T12:00:00Z",
+          "updated_at": "2024-02-01T12:00:00Z"
+        }
+      },
+        {
+          "model": "anbor.counterparty",
+          "pk": 1,
+          "fields": {
+            "name": "ООО Ромашка",
+            "full_name": "Общество с ограниченной ответственностью Ромашка",
+            "phone_number": "+7 (123) 456-7890",
+            "inn": "123456789012",
+            "created_at": "2024-02-01T12:00:00Z",
+            "updated_at": "2024-02-01T12:00:00Z"
+          }
+        },
+        {
+          "model": "anbor.counterparty",
+          "pk": 2,
+          "fields": {
+            "name": "ИП Петров",
+            "full_name": "Индивидуальный предприниматель Петров Иван Иванович",
+            "phone_number": "+7 (987) 654-3210",
+            "inn": "987654321098",
+            "created_at": "2024-02-01T12:00:00Z",
+            "updated_at": "2024-02-01T12:00:00Z"
+          }
+        },
+        {
+          "model": "anbor.counterparty",
+          "pk": 3,
+          "fields": {
+            "name": "ЗАО Созвездие",
+            "full_name": "Закрытое акционерное общество Созвездие",
+            "phone_number": "+7 (999) 111-2233",
+            "inn": "111222333444",
+            "created_at": "2024-02-01T12:00:00Z",
+            "updated_at": "2024-02-01T12:00:00Z"
+          }
+        },
+        {
+          "model": "anbor.counterparty",
+          "pk": 4,
+          "fields": {
+            "name": "ОАО Прогресс",
+            "full_name": "Открытое акционерное общество Прогресс",
+            "phone_number": "+7 (555) 777-8888",
+            "inn": "555777888999",
+            "created_at": "2024-02-01T12:00:00Z",
+            "updated_at": "2024-02-01T12:00:00Z"
+          }
+        },
+        {
+          "model": "anbor.counterparty",
+          "pk": 5,
+          "fields": {
+            "name": "ТД Экспресс",
+            "full_name": "Торговая компания Экспресс",
+            "phone_number": "+7 (333) 555-9999",
+            "inn": "333555999111",
+            "created_at": "2024-02-01T12:00:00Z",
+            "updated_at": "2024-02-01T12:00:00Z"
+          }
+        }
+  ]
+  

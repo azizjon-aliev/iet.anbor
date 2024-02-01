@@ -1,7 +1,7 @@
 from dataclasses import fields
 from distutils.ccompiler import show_compilers
 from django.contrib import admin
-from .models import Category, Product, Counterparty
+from .models import Category, Product, Counterparty, Operation, OperationGroup
 from django.utils.html import format_html
 
 
@@ -26,6 +26,7 @@ class ProductAdmin(BaseModelAdmin):
         'image',
         'title',
         'description',
+        'category',
         'created_at',
         'updated_at',
     )
@@ -38,7 +39,7 @@ class ProductAdmin(BaseModelAdmin):
     def show_image(self, obj):
         url = '/static/anbor/img/default_product.png'
 
-        if not obj.image:
+        if obj.image:
             url = obj.image.url
             
         return format_html(f"<img src='{url}' width={70} height={70} />")
@@ -64,3 +65,20 @@ class CounterpartyAdmin(BaseModelAdmin):
     readonly_fields = (
         'created_at', 'updated_at', 
     )
+
+
+class OperationInline(admin.TabularInline):
+    model = Operation
+    autocomplete_fields = ('product',)
+    extra = 1
+    
+    
+@admin.register(OperationGroup)
+class OperationGroupAdmin(BaseModelAdmin):
+    autocomplete_fields = ('counterparty',)
+    inlines = (OperationInline,)
+    readonly_fields = ('created_at', 'updated_at',)
+    fields = ('counterparty', 'action', 'comment', 'created_at', 'updated_at',)
+
+    def amount(self, obj):
+        return 100

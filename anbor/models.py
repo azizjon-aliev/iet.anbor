@@ -45,3 +45,44 @@ class Counterparty(models.Model):
  
     def __str__(self) -> str:
         return self.full_name
+
+
+class OperationGroup(models.Model):
+    class Meta:
+        verbose_name = 'Операция'
+        verbose_name_plural = 'Операции'
+    
+    class Status(models.IntegerChoices):
+        INACTIVE = 0, "На расмотрения"
+        ACTIVE = 1, "Принята"
+    
+    class Action(models.IntegerChoices):
+        DEBIT = 0, "Расход"
+        CREDIT = 1, "Приход"
+        
+    counterparty = models.ForeignKey(verbose_name='Контрагент', to=Counterparty, on_delete=models.CASCADE)
+    action = models.SmallIntegerField(verbose_name='Действие', choices=Action.choices)
+    status = models.SmallIntegerField(verbose_name='Статус', choices=Status.choices, default=Status.INACTIVE)
+    comment = models.TextField(verbose_name='Комментарие', blank=True)
+    created_at = models.DateTimeField(verbose_name='Время создание', auto_now_add=True)
+    updated_at = models.DateTimeField(verbose_name='Время обновление', auto_now=True)
+    
+    def __str__(self) -> str:
+        return self.counterparty.name
+    
+
+class Operation(models.Model):
+    class Meta:
+        verbose_name = 'Группа Операция'
+        verbose_name_plural = 'Группа Операции'
+        
+    product = models.ForeignKey(verbose_name='Продукт', to=Product, on_delete=models.CASCADE)
+    count = models.IntegerField(verbose_name='Количество')
+    price = models.FloatField(verbose_name='Ценна')
+    discount = models.FloatField(verbose_name='Скыдка')
+    group = models.ForeignKey(verbose_name='Группа', to=OperationGroup, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(verbose_name='Время создание', auto_now_add=True)
+    updated_at = models.DateTimeField(verbose_name='Время обновление', auto_now=True)
+    
+    def __str__(self) -> str:
+        return self.product.title
